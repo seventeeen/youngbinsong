@@ -1,9 +1,94 @@
+//@import url(//cdn.jsdelivr.net/font-nanum/1.0/nanumgothic/nanumgothic.css);
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+body {
+  min-width: 1366px;
+  font-family: 'Nanum Gothic', serif;
+  background: #e3dede;
+  margin: 0;
+  color: #333030;
+}
 
-// Variables
-@import "variables";
+header {
+  background: #333030;
+  color: #e3dede;
+}
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#content {
+  min-height: 768px;
+}
+
+.main-width {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.middle {
+  justify-content: center;
+  align-items: center;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.arrow-box {
+  background: #e3dede;
+  border: 1px solid #333030;
+  border-radius: 5px;
+}
+.arrow-box:after, .arrow-box:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow-box:after {
+  border-color: rgba(227, 222, 222, 0);
+  border-right-color: #e3dede;
+  border-width: 5px;
+  margin-top: -5px;
+}
+.arrow-box:before {
+  border-color: rgba(51, 48, 48, 0);
+  border-right-color: #333030;
+  border-width: 6px;
+  margin-top: -6px;
+}
