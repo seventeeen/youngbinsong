@@ -30,11 +30,11 @@ function moveBono() {
     console.log(rand);
     $bono.animate({
         top: '+=100'
-    }, 800, () => {
+    }, 400, () => {
         $bono.css('right', pos);
         $bono.animate({
             top: '-=100'
-        }, 1600)
+        }, 800)
     });
 }
 
