@@ -27,7 +27,6 @@ let interval;
 function moveBono() {
     let rand = Math.random() * 90 + 5,
         pos = rand + 'vw';
-    console.log(rand);
     $bono.animate({
         top: '+=100'
     }, 400, () => {

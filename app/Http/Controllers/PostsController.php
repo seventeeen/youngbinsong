@@ -25,7 +25,14 @@ class PostsController extends Controller
                         'body' => 'required'
                 ]);
 
-                Post::create(request(['title', 'author', 'body']));
+                $data = array(
+                        'title' => request('title'),
+                        'author' => request('author'),
+                        'body' => request('body'),
+                        'ip' => request()->ip()
+                );
+
+                Post::create($data);
                 return redirect('/posts');
         }
 

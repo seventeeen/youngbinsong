@@ -20,6 +20,7 @@ class CreatePostsTable extends Migration
             $table->text('body');
             $table->integer('like')->default(0);
             $table->integer('dislike')->default(0);
+            $table->string('ip');
             $table->timestamps();
         });
     }

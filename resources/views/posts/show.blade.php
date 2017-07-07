@@ -11,5 +11,8 @@
         <br/>
         <div>created at:</div>
         <div>{{ $post->created_at->toFormattedDateString() }}</div>
+        <br/>
+        <div>ip:</div>
+        <div>{{ $post->ip }}</div>
     </div>
 @endsection
